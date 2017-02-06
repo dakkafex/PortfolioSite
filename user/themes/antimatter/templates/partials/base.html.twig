@@ -40,7 +40,6 @@
 {% endblock head %}
 </head>
 <body id="top" class="{{ page.header.body_classes }}">
-     <div id="particles-js">
     <div id="sb-site">
         {% block header %}
         <header id="header">
@@ -61,6 +60,7 @@
         {% endblock %}
 
         {% block showcase %}{% endblock %}
+         <div id="particles-js">
 
         {% block body %}
         <section id="body" class="{{ class }}">
@@ -68,6 +68,7 @@
             {% block content %}{% endblock %}
         </section>
         {% endblock %}
+         </div>
 
         {% block footer %}
         <footer id="footer">
@@ -97,6 +98,5 @@
         });
         </script>
     {% endblock %}
-     </div>
 </body>
 </html>
